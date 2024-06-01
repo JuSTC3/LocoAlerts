@@ -1,0 +1,25 @@
+{
+    "api": {
+        "streamers_url": "https://ivory.getloconow.com/v2/homepage/?type=streamers&limit=1000&offset=0",
+        "live_url": "https://ivory.getloconow.com/v2/homepage/?type=live&limit=1000&offset=0",
+        "streamer": "https://loco.gg/_next/data/"
+    },
+    "cron": {
+        "streamerList": "00 00 * * * *",
+        "liveList": "00,30 * * * * *",
+        "islive" : "10,40 * * * * *"
+    },
+    "DeLay" : 60,
+    "token": "Your-Discord-Bot-Token",
+    "clientId": "Your-Discord-Bot-Client-Id",
+    "guildId" : "Your-Guild-id",
+    "command": {
+        "main" : "loco",
+        "add" : "add-streamer",
+        "remove" : "remove-streamer",
+        "help" : "help",
+        "ping" : "ping",
+        "status" : "status",
+        "servers" : "servers"
+    }
+}

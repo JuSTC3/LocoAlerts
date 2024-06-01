@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "loco-alerts",
+  "version": "1.0.0",
+  "description": "loco alert",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JuSTC3",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "cron": "^2.1.0",
+    "discord.js": "^14.6.0",
+    "moment": "^2.29.4",
+    "node-fetch": "^3.2.10"
+  }
+}
