@@ -2,7 +2,8 @@
     "api": {
         "streamers_url": "https://ivory.getloconow.com/v2/homepage/?type=streamers&limit=1000&offset=0",
         "live_url": "https://ivory.getloconow.com/v2/homepage/?type=live&limit=1000&offset=0",
-        "streamer": "https://loco.gg/_next/data/"
+        "streamer": "https://loco.gg/_next/data/",
+        "profile": "https://api.getloconow.com/v3/user/device_profile/"
     },
     "cron": {
         "streamerList": "00 00 * * * *",

@@ -10,8 +10,7 @@ class DAPI {
         Accept: "*/*",
         "Accept-Language": "en-US,en;q=0.5",
         "Content-Type": "application/json",
-        Authorization:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRlX2pvaW5lZCI6MCwiZGV2aWNlX2lkIjoiY2Y3MTY3NTc0MjJjOTQxODZkMWVlZWI1MzllMmMxNzlsaXZlIiwiZXhwIjoxNzI0ODM1MDE1LCJpYXQiOjE3MTcwNTkwMTUsImlwX2FkZHIiOiIxMDYuMjIyLjIzOS4xODAiLCJpc19ndWVzdCI6dHJ1ZSwiaXNvX2NvZGUiOiJJTiIsImlzcyI6IkxvY28uZ2ciLCJzY29wZSI6ImFsbCJ9.K_nV_oP1jl3ZEiJBnqr_PO0hMnV7HcCCGpGSA18JrsU",
+        Authorization: global.authToken,
         "X-PLATFORM": "7",
         "Sec-Fetch-Dest": "empty",
         "Sec-Fetch-Mode": "cors",
@@ -29,6 +28,38 @@ class DAPI {
     } catch (err) {
       console.error("\x1b[31m", err, "\x1b[0m")
       return { "error": true }
+    }
+  }
+  async getAuthToken(url) {
+    const options = {
+      method: 'POST',
+      headers: {
+        'accept': '*/*',
+        'accept-language': 'en-GB,en;q=0.9',
+        'device-id': 'cf716757422c94186d1eeeb539e2c179live',
+        'x-client-id': 'TlwKp1zmF6eKFpcisn3FyR18WkhcPkZtzwPVEEC3',
+        'x-client-secret': 'Kp7tYlUN7LXvtcSpwYvIitgYcLparbtsQSe5AdyyCdiEJBP53Vt9J8eB4AsLdChIpcO2BM19RA3HsGtqDJFjWmwoonvMSG3ZQmnS8x1YIM8yl82xMXZGbE3NKiqmgBVU',
+        'x-platform': '7',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "platform": 7,
+        "client_id": "",
+        "client_secret": "",
+        "model": "",
+        "os_ver": "",
+        "os_name": "",
+        "app_ver": ""
+      })
+    };
+
+    try {
+      const response = await fetch(url, options);
+      const data = await response.json();
+      console.log("Fetching Access Token ...");
+      return data.access_token;
+    } catch (error) {
+      console.error('Error:', error);
     }
   }
 }
