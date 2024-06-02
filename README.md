@@ -1,10 +1,13 @@
 
-![Logo](https://cdn.discordapp.com/avatars/1039627540635066430/ffcc17c5ca0a16b79d043b9ab0d35dd1.png?size=256)
+<p align="center">
+  <img src="https://cdn.discordapp.com/avatars/1039627540635066430/ffcc17c5ca0a16b79d043b9ab0d35dd1.png?size=512" alt="Logo" />
+</p>
 
+<h1 align="center">LOCO ALERTS - A Live Notification Alert Bot</h1>
 
-# LOCO ALERTS - A Live Notification Alert Bot
-
-Loco Alerts is one of the first five verified Discord bots in Kerala. The bot is very useful for streamers who stream on the Loco.gg platform, a famous game streaming platform in India. Loco Alerts is one of the main bots used for Loco live notifications, serving almost 1000 Discord guilds. The bot will notify you when your favorite streamer goes live on the Loco platform.
+<p align="center">
+  Loco Alerts is one of the first five verified Discord bots in Kerala. The bot is very useful for streamers who stream on the Loco.gg platform, a famous game streaming platform in India. Loco Alerts is one of the main bots used for Loco live notifications, serving almost 1000 Discord guilds. The bot will notify you when your favorite streamer goes live on the Loco platform.
+</p>
 
 
 ## Screenshots
